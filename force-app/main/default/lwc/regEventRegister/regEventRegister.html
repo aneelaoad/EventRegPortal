@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Register Event">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Event Title" value={eventTitle} data-id="eventTitle" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Event Organizer" value={eventOrganizer} data-id="eventOrganizer" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Event Organizer Company" value={eventOrganizerCompany} data-id="eventOrganizerCompany" onchange={handleInputChange}></lightning-input>
+            <lightning-input type="datetime" label="Start Date and Time" value={eventStartDateTime} data-id="eventStartDateTime" onchange={handleInputChange}></lightning-input>
+            <lightning-input type="datetime" label="End Date and Time" value={eventEndDateTime} data-id="eventEndDateTime" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Event Type" value={eventType} data-id="eventType" onchange={handleInputChange}></lightning-input>
+            <lightning-input type="number" label="Event Charges" value={eventCharges} data-id="eventCharges" onchange={handleInputChange}></lightning-input>
+            <lightning-textarea label="Event Description" value={eventDescription} data-id="eventDescription" onchange={handleInputChange}></lightning-textarea>
+            <lightning-input label="Banner Image URL" value={bannerImage} data-id="bannerImage" onchange={handleInputChange}></lightning-input>
+
+            <lightning-input label="Street" value={eventStreet} data-id="eventStreet" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="City" value={eventCity} data-id="eventCity" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="State" value={eventState} data-id="eventState" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Postal Code" value={eventPostalCode} data-id="eventPostalCode" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Country" value={eventCountry} data-id="eventCountry" onchange={handleInputChange}></lightning-input>
+
+            <lightning-button label="Register Event" onclick={handleSubmit} class="slds-m-top_medium"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

@@ -4,7 +4,7 @@
 * @since: 20/12/23
 * @Last Modified by: Aneela Oad
 */
-public with sharing  class DenormalizedEvent {
+public   class DenormalizedEvent {
   @AuraEnabled public String eventDescription;
   @AuraEnabled public String aboutUsDescription;
    @AuraEnabled public String bannerImage;
@@ -14,6 +14,7 @@ public with sharing  class DenormalizedEvent {
    @AuraEnabled public String eventCity;
    @AuraEnabled public String eventCountry;
    @AuraEnabled public String eventStreet;
+   @AuraEnabled public Decimal eventCharges;
    @AuraEnabled public DateTime eventStartDateTime;
    @AuraEnabled public DateTime eventEndDateTime;
    @AuraEnabled public String dubaiDreamineventId;
@@ -25,10 +26,10 @@ public with sharing  class DenormalizedEvent {
   @AuraEnabled public String bannerImageWarning;
 
   public DenormalizedEvent(){
-    titleWarning = 'Title is missing';
-    descriptionWarning = 'Description is missing';
-    dateTimeWarning = 'N/A.';
-    bannerImageWarning= 'Banner image is missing.';
+    // titleWarning = 'Title is missing';
+    // descriptionWarning = 'Description is missing';
+    // dateTimeWarning = 'N/A.';
+    // bannerImageWarning= 'Banner image is missing.';
   }
 
 }

@@ -1,0 +1,26 @@
+<template>
+	<header class="navbar">
+		<template if:true={navbarItems}>
+			<div class="logo">
+				<h1>AttendEasePlus </h1>
+			</div>
+
+
+			<ul class={menuClass}>
+				<template for:each={navbarItems} for:item="item">
+					<li key={item.Id}>
+						<!-- <a href="#">{item.MasterLabel}</a> -->
+						<a href="" data-id={item.MasterLabel} onclick={handleNavItemClick}>{item.MasterLabel}</a>
+
+					</li>
+				</template>
+			</ul>
+			<div class="hamburger-icon" onclick={toggleMenu}>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+
+		</template>
+	</header>
+</template>
